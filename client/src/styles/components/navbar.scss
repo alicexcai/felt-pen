@@ -1,0 +1,25 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-link.active {
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    margin-right: 0.5rem;
+  }
+}
+
+.btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.settings {
+  width: 36px;
+  height: 36px;
+}

@@ -1,0 +1,111 @@
+// etc
+input.form-control {
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  border-radius: 0;
+  padding: $form-padding-y $form-padding-x;
+  outline: none;
+  transition: border-color 1s ease;
+  &:focus {
+    box-shadow: none;
+    border-color: $primary-color;
+  }
+  &.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    &::placeholder {
+      color: lighten($placeholder-color, 10%);
+    }
+  }
+  &::placeholder {
+    color: $placeholder-color;
+    font-weight: normal;
+  }
+}
+
+.btn-sm {
+  font-size: 0.8rem;
+}
+
+.indent {
+  padding-left: 1.2rem;
+}
+
+iframe {
+  min-height: 800px;
+  min-height: 90vh;
+}
+
+.accordion-item {
+  border: none;
+  outline: none;
+  .accordion-collapse {
+    background: #fff;
+  }
+  button {
+    transition: .5s ease all;
+    padding: 0;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.01);
+    outline: none;
+    &:not(.collapsed) {
+      background-color: #fff;
+      box-shadow: none;
+    }
+    &:after {
+      content: "+";
+      background: gray;
+      color: #fff;
+      width: 12px;
+      height: 12px;
+      margin-top: 0;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &:hover button.collapsed {
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 15px;
+  }
+}
+
+.introjs-helperLayer {
+  pointer-events: none;
+}
+
+a.introjs-hint {
+  z-index: 999;
+}
+
+.introjs-tooltipbuttons, .introjs-nextbutton, .introjs-bullets {
+  display: none;
+}
+
+.no-skip {
+  .introjs-skipbutton {
+    display: none;
+  }
+}
+
+.move-bottom {
+  margin-top: 60px;
+}
+
+.move-top {
+  margin-top: -200px;
+}
+.move-right {
+  margin-left: 102%;
+}
+.introjs-relativePosition {
+  position: inherit !important;
+}
+
+.checkbox-wrapper {
+  white-space: nowrap;
+  label {
+    font-size: .85rem;
+  }
+}
