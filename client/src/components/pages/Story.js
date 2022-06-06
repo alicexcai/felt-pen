@@ -137,7 +137,7 @@ const Story = ({ inputs, returnImgSrc, initialImgSrc, initialEmotion, emotionLoo
     }
 
     function generateStory(newEmotion) {
-        const apiKey = "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";
+        const apiKey = "";
         const OpenAI = require('openai-api');
         const openai = new OpenAI(apiKey);
         let promptText = "";
